@@ -1,8 +1,17 @@
 import Hero from "./MainComponents/Hero";
 import About from "./MainComponents/About";
-import Special from "./MainComponents/Special";
+import Specials from "./MainComponents/Specials";
 import Testimonials from "./MainComponents/Testimonials";
 
-const Main = () => {}
+const Main = () => {
+    return (
+        <main className="main">
+            <Hero />
+            <About />
+            <Specials />
+            <Testimonials />
+        </main>
+    );
+}
 
 export default Main;
