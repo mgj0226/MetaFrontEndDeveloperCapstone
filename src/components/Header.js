@@ -1,9 +1,11 @@
+import Logo from '../images/Logo.svg';
+
 const Header = () => {
     return (
         <header className="header">
-            <img src="./images/logo.png" alt="logo" />
-            <nav>
-                <ul>
+            <img src={Logo} alt="logo" className='logo' />
+            <nav className='nav'>
+                <ul className='karla-ul'>
                     <li><a href="/">Home</a></li>
                     <li><a href="/About">About</a></li>
                     <li><a href="/Menu">Menu</a></li>

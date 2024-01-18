@@ -1,7 +1,6 @@
 html {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   font-size: 62.5%;
   line-height: 1.5;
 }
@@ -13,32 +12,168 @@ body {
   line-height: 1.5;
 }
 
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 textarea, input {
-  /* font-size: 1.6rem; */
+  font-size: 1.6rem;
   margin-top: 1rem;
 }
 
 header {
+  grid-area: header;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   padding: 10px 20px;
+  width: 100%;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
 }
-
-.main {
-  display: grid;
-  grid-template-columns: repeat(2, 100px);
-  grid-auto-rows: minmax(150px, auto);
-  grid-template-areas: "header header" "Hero Hero" "Specials Specials" "Testimonials Testimonials" "About About" "footer footer";
+header .logo {
+  max-width: 200px;
+}
+header .nav .karla-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  list-style-type: none;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+header .nav .karla-ul li {
+  margin-right: 1em;
+  font-size: 2rem;
+}
+header .nav .karla-ul li:hover {
+  scale: 1.2;
+}
+header .nav .karla-ul li a {
+  text-decoration: none;
+  color: #000;
 }
 
-footer {
+.main {
+  grid-area: main;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+.main .hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(auto, auto);
+  grid-template-areas: "heroTitle heroImg" "heroSubtitle heroImg" "heroArticle heroImg" "heroButton heroImg";
+  justify-content: center;
+  align-items: center;
+  padding: 0em 20em;
+  background-color: #495E57;
+  width: 50%;
+  max-width: 100vh;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.main .heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50vh;
+}
+.main .heroText .heroTitle {
+  grid-area: heroTitle;
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 7rem;
+  margin-bottom: 0px;
+  color: #F4CE14;
+}
+.main .heroText .heroSubtitle {
+  grid-area: heroSubtitle;
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.main .heroText .heroArticle {
+  grid-area: heroArticle;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.main .heroText .heroButton {
+  grid-area: heroButton;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  width: 70%;
+  background-color: #F4CE14;
+}
+.main .heroText .heroButton:hover {
+  scale: 1.1;
+}
+.main .heroImg {
+  grid-area: heroImg;
+  width: 400px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 10rem;
+  margin-top: 5rem;
+  overflow-y: visible;
+  border-radius: 10%;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   padding: 10em 20em;
   background-color: #fff;
   border-top: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .body {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    grid-template-areas: "header header" "main main" "footer footer";
+  }
+  .header {
+    flex-direction: column;
+    width: auto;
+  }
+  .header .logo {
+    margin-left: 3em;
+  }
+  .header .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header .nav ul li {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
 }/*# sourceMappingURL=App.css.map */

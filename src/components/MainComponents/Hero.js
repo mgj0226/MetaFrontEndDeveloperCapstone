@@ -1,13 +1,15 @@
+import restaurantFood from '../../images/restaurantfood.jpg';
+
 const Hero = () => {
     return (
         <section className="hero">
-            <div className="hero__container">
-                <div className="hero__text">
-                    <h1 className="hero__title">The best foodie experience</h1>
-                    <p className="hero__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, voluptatum.</p>
-                    <button className="hero__button">Book a table</button>
-                </div>
-            </div>
+            <text className='heroText'>
+                <h1 className="heroTitle">Little Lemon</h1>
+                <h2 className="heroSubtitle">Chicago</h2>
+                <article className="heroArticle">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</article>
+                <button className="heroButton">Reserve a Table</button>
+            </text>
+            <img src={restaurantFood} alt="food" className="heroImg" />
         </section>
     );
 };
