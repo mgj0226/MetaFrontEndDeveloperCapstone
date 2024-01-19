@@ -76,14 +76,17 @@ header .nav .karla-ul li a {
   grid-template-areas: "heroTitle heroImg" "heroSubtitle heroImg" "heroArticle heroImg" "heroButton heroImg";
   justify-content: center;
   align-items: center;
-  padding: 0em 20em;
+  padding: 1em 20em;
   background-color: #495E57;
   width: 50%;
+  height: 21em;
   max-width: 100vh;
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  overflow: visible;
+  z-index: 1;
 }
 .main .heroText {
   display: flex;
@@ -125,7 +128,6 @@ header .nav .karla-ul li a {
   font-weight: 700;
   padding: 1rem 2rem;
   border-radius: 15px;
-  width: 70%;
   background-color: #F4CE14;
 }
 .main .heroText .heroButton:hover {
