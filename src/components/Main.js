@@ -7,9 +7,9 @@ const Main = () => {
     return (
         <main className="main">
             <Hero />
-            <About />
             <Specials />
             <Testimonials />
+            <About />
         </main>
     );
 }
