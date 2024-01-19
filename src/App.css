@@ -252,6 +252,12 @@ header .nav .karla-ul li a {
   font-weight: 600;
   font-size: 6rem;
 }
+.main .testimonialsCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
 footer {
   grid-area: footer;
