@@ -258,6 +258,64 @@ header .nav .karla-ul li a {
   justify-content: space-between;
   align-items: center;
 }
+.main .testimonialsCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 15em;
+  height: 15em;
+  padding: 5em 5em;
+  border: #EDEFEE 1px solid;
+  background-color: #EDEFEE;
+  border-radius: 15px;
+  margin: 2em;
+}
+.main .testimonialsCardLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200em;
+  padding: 2em 2em;
+  margin: 1em 0;
+}
+.main .testimonialsCardRate {
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+}
+.main .testimonialsCardImg {
+  width: 7em;
+  height: 7em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.main .testimonialsCardName {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+.main .testimonialsCardDescription {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+.main .testimonialsCardRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2em;
+  padding: 0 0em;
+  width: 20em;
+}
+.main .testimonialsCardArticle {
+  width: 30ch;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 
 footer {
   grid-area: footer;

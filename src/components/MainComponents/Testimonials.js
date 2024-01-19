@@ -10,7 +10,7 @@ const Testimonials = () => {
         .then((data) => {
             if (users) {const newUsers = data.results.map(user => ({
                     Name: user.name.first + ' ' + user.name.last,
-                    image: user.picture.thumbnail,
+                    image: user.picture.large,
                     age: user.dob.age,
                 }));
                 setUsers(newUsers);
@@ -26,7 +26,7 @@ const Testimonials = () => {
     }
     return(
         <section className="testimonials">
-            <h1 className='testimonialsTitle'>Testimonials</h1>
+            <h1 className='testimonialsTitle'>Customers say:</h1>
             <div className="testimonialsCards">
                 <div className="testimonialsCard">
                     <div className="testimonialsCardLeft">

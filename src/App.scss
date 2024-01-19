@@ -259,6 +259,63 @@ header {
       justify-content: space-between;
       align-items: center;
     }
+    &Card {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 15em;
+      height: 15em;
+      padding: 5em 5em;
+      border: $cardBg-color 1px solid;
+      background-color: $cardBg-color;
+      border-radius: 15px;
+      margin: 2em;
+      &Left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200em;
+        padding: 2em 2em;
+        margin: 1em 0;
+      }
+      &Rate {
+        display: flex;
+        flex-direction: row;
+        font-size: 3rem;
+      }
+      &Img {
+        width: 7em;
+        height: 7em;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      &Name {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5em;
+      }
+      &Description {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 0.5em;
+      }
+      &Right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2em;
+        padding: 0 0em;
+        width: 20em;
+      }
+      &Article {
+        width: 30ch;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+    }
   }
 }
 
