@@ -43,7 +43,7 @@ const Testimonials = () => {
                         <p className="testimonialsCardDescription">{users[0].Name}is a {users[0].age} years old marketing manager.</p>
                     </div>
                     <div className="testimonialsCardRight">
-                        <article className="testimonialsCardArticle">I love having dinner at Little Lemon. The dishes are amazing.</article>
+                        <p className="testimonialsCardArticle">I love having dinner at Little Lemon. The dishes are amazing.</p>
                     </div>
                 </div>
                 <div className="testimonialsCard">
@@ -61,7 +61,7 @@ const Testimonials = () => {
                         <p className="testimonialsCardDescription">{users[1].Name}is a {users[1].age} years old marketing manager.</p>
                     </div>
                     <div className="testimonialsCardRight">
-                        <article className="testimonialsCardArticle">I love having dinner at Little Lemon. The dishes are amazing.</article>
+                        <p className="testimonialsCardArticle">I love having dinner at Little Lemon. The dishes are amazing.</p>
                     </div>
                 </div>
                 <div className="testimonialsCard">
@@ -79,7 +79,7 @@ const Testimonials = () => {
                         <p className="testimonialsCardDescription">{users[2].Name}is a {users[2].age} years old marketing manager.</p>
                     </div>
                     <div className="testimonialsCardRight">
-                        <article className="testimonialsCardArticle">I love having dinner at Little Lemon. The dishes are amazing.</article>
+                        <p className="testimonialsCardArticle">I love having dinner at Little Lemon. The dishes are amazing.</p>
                     </div>
                 </div>
                 <div className="testimonialsCard">
@@ -97,7 +97,7 @@ const Testimonials = () => {
                         <p className="testimonialsCardDescription">{users[3].Name}is a {users[3].age} years old marketing manager.</p>
                     </div>
                     <div className="testimonialsCardRight">
-                        <article className="testimonialsCardArticle">I love having dinner at Little Lemon. The dishes are amazing.</article>
+                        <p className="testimonialsCardArticle">I love having dinner at Little Lemon. The dishes are amazing.</p>
                     </div>
                 </div>
             </div>
