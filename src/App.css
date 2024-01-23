@@ -152,6 +152,7 @@ header .nav .karla-ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 40em;
 }
 .main .specialHead {
   display: flex;
@@ -316,17 +317,121 @@ header .nav .karla-ul li a {
   font-size: 1.5rem;
   font-weight: 400;
 }
+.main .about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50em;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin: 10em 0;
+}
+.main .aboutArticle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+}
+.main .aboutTitle {
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 7rem;
+  color: #495E57;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.main .aboutSubtitle {
+  font-weight: 400;
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.main .about .aboutImgBlock {
+  width: 40%;
+  transform: scale(2);
+}
+.main .aboutImg {
+  padding-bottom: 10px;
+  height: 10em;
+  -webkit-clip-path: inset(30% 10% 0 40%);
+          clip-path: inset(30% 10% 0 40%);
+}
 
-footer {
+.footer {
   grid-area: footer;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: "karla", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
   width: 100%;
-  padding: 10em 0em;
-  background-color: #fff;
+  padding: 0em 0em;
   border-top: 1px solid #ddd;
+}
+.footer li {
+  list-style-type: none;
+}
+.footer li:hover {
+  scale: 1.2;
+}
+.footer li a {
+  text-decoration: none;
+  color: #000;
+}
+.footerImg {
+  margin-right: 5em;
+}
+.footerNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: self-start;
+  width: 50%;
+  margin: 0em 0em;
+}
+.footer .doormat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .doormatTitle {
+  font-family: "Markazi Text", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 0em;
+}
+.footer .contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .contactsTitle {
+  font-family: "Markazi Text", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 0em;
+}
+.footer .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .socialTitle {
+  font-family: "Markazi Text", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 0em;
 }
 
 @media (max-width: 768px) {

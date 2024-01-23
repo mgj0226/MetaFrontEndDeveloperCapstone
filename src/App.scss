@@ -154,6 +154,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 40em;
     &Head {
       display: flex;
       flex-direction: row;
@@ -317,18 +318,122 @@ header {
       }
     }
   }
+  .about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50em;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin: 10em 0;
+    &Article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 60%;
+    }
+    &Title {
+      font-family: "Markazi Text", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 7rem;
+        color: $primary-color;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    &Subtitle {
+      font-weight: 400;
+      font-size: 4rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .aboutImgBlock {
+      width: 40%;
+      transform: scale(2);
+    }
+    &Img {
+      padding-bottom: 10px;
+      height: 10em;
+      clip-path: inset(30% 10% 0 40%);
+    }
+  }
 }
 
-footer {
+.footer {
   grid-area: footer;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: 'karla', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
   width: 100%;
-  padding: 10em 0em;
-  background-color: #fff;
+  padding: 0em 0em;
+  // background-color: #fff;
   border-top: 1px solid #ddd;
+  li {
+    list-style-type: none;
+    &:hover {
+      scale: 1.2;
+    }
+    a{
+    text-decoration: none;
+    color: #000;
+    }
+  }
+  &Img {
+    margin-right: 5em;
+  }
+  &Nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: self-start;
+    width: 50%;
+    margin: 0em 0em;
+  }
+  .doormat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &Title {
+      font-family: 'Markazi Text', sans-serif;
+      font-weight: 600;
+      font-size: 3rem;
+      margin-bottom: 0em;
+    }
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &Title {
+      font-family: 'Markazi Text', sans-serif;
+      font-weight: 600;
+      font-size: 3rem;
+      margin-bottom: 0em;
+    }
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &Title {
+      font-family: 'Markazi Text', sans-serif;
+      font-weight: 600;
+      font-size: 3rem;
+      margin-bottom: 0em;
+    }
+  }
 }
 
 

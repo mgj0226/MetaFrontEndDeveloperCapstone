@@ -8,7 +8,7 @@ const About = () => {
                 <h3 className="aboutSubtitle">Chicago</h3>
                 <p className="aboutText">Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. The restaurant features a locally-sourced menu with daily specials.</p>
             </article>
-            <img src={Owners} alt="Mario and Adrian" className="aboutImg"/>
+            <div className="aboutImgBlock"><img src={Owners} alt="Mario and Adrian" className="aboutImg"/></div>
         </section>
     );
 };
