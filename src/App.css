@@ -1,5 +1,5 @@
 html {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 100%;
   font-size: 62.5%;
@@ -7,11 +7,20 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 100%;
   font-size: 2.1rem;
   line-height: 1.5;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 .body {
@@ -27,41 +36,67 @@ textarea, input {
   margin-top: 0rem;
 }
 
-header {
+.header {
   grid-area: header;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 10px 0;
-  width: 100%;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  z-index: 10001;
 }
-header .logo {
+.header .logo {
   max-width: 200px;
 }
-header .nav .karla-ul {
+.header .menuIcon {
+  display: none;
+  cursor: pointer;
+}
+.header .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 3px 0;
+}
+.header .navUl {
+  list-style: none;
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  align-items: flex-end;
-  list-style-type: none;
+}
+.header .navUl li {
+  display: inline-block;
+  padding: 0.5em;
+  font-size: 2rem;
+}
+.header .navUl li:hover {
+  -webkit-text-decoration: underline solid #495E57;
+          text-decoration: underline solid #495E57;
+}
+.header .navUl.visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 1em;
+  right: 0;
+  width: 100%;
+  background-color: #F4CE14;
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  transition: all 0.3s ease-in-out;
 }
-header .nav .karla-ul li {
-  margin-right: 1em;
+.header .navUl.visible li {
+  display: inline-block;
+  padding: 0.5em;
   font-size: 2rem;
 }
-header .nav .karla-ul li:hover {
-  scale: 1.2;
-}
-header .nav .karla-ul li a {
-  text-decoration: none;
-  color: #000;
+.header .navUl.visible li:hover {
+  -webkit-text-decoration: underline solid #495E57;
+          text-decoration: underline solid #495E57;
 }
 
 .main {
@@ -88,7 +123,7 @@ header .nav .karla-ul li a {
   font-weight: 700;
   font-style: normal;
   overflow: visible;
-  z-index: 1;
+  z-index: 10000;
 }
 .main .heroText {
   display: flex;
@@ -380,7 +415,8 @@ header .nav .karla-ul li a {
   list-style-type: none;
 }
 .footer li:hover {
-  scale: 1.2;
+  -webkit-text-decoration: underline solid #495E57;
+          text-decoration: underline solid #495E57;
 }
 .footer li a {
   text-decoration: none;
@@ -434,25 +470,22 @@ header .nav .karla-ul li a {
   margin-bottom: 0em;
 }
 
-@media (max-width: 768px) {
-  .body {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(150px, auto);
-    grid-template-areas: "header header" "main main" "footer footer";
-  }
-  .header {
+@media screen and (max-width: 768px) {
+  .menuIcon {
+    display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
-  .header .logo {
-    margin-left: 3em;
+  .navUl {
+    display: none;
   }
-  .header .nav ul {
-    flex-direction: column;
-    align-items: flex-start;
+  .navUl.visible {
+    display: flex;
+    z-index: 10001;
+    padding: 20px 0;
   }
-  .header .nav ul li {
-    margin-right: 0;
-    margin-bottom: 1em;
+  .bar {
+    background-color: #333333;
   }
 }/*# sourceMappingURL=App.css.map */
