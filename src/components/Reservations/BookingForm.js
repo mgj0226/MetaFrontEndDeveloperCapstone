@@ -37,16 +37,16 @@ const BookingForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label htmlFor="res-date">Choose date</label>
+        <form onSubmit={handleSubmit} className='bookingForm'>
+            <label htmlFor="res-date">Choose date:</label>
             <input type="date" id="res-date" name="res-date" onChange={handleDateChange} />
-            <label htmlFor="res-time">Choose time</label>
+            <label htmlFor="res-time">Choose time:</label>
             <select id="res-time" name="res-time" onChange={e => dispatch({ type: 'setTime', payload: e.target.value })}>
                 {availableTimes.map(time => <option key={time}>{time}</option>)}
             </select>
-            <label htmlFor="guests">Number of guests</label>
+            <label htmlFor="guests">Number of guests:</label>
             <input type="number" id="guests" name="guests" min="1" placeholder="1" onChange={e => dispatch({ type: 'setGuests', payload: e.target.value })}/>
-            <label htmlFor="occasion">Occasion</label>
+            <label htmlFor="occasion">Occasion:</label>
             <select id="occasion" name="occasion" onChange={e => dispatch({ type: 'setOccasion', payload: e.target.value })}>
                 <option>Anniversary</option>
                 <option>Birthday</option>
