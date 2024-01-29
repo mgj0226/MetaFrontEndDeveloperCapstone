@@ -53,7 +53,7 @@ const BookingForm = () => {
                 <option>Business meal</option>
                 <option>Other</option>
             </select>
-            <input type="submit" value="Make Your reservation" />
+            <input type="submit" value="Make Your reservation" className='submitBtn' />
         </form>
     );
 };
