@@ -40,8 +40,8 @@ const BookingForm = () => {
     return (
         <form onSubmit={handleSubmit} className='bookingForm'>
             <label htmlFor="res-date">Choose date:</label>
-            <input type="date" id="res-date" name="res-date" onChange={handleDateChange} />
-            <label htmlFor="res-time">Choose time:</label>
+            <input type="date" id="res-date" name="res-date" onChange={handleDateChange} required/>
+            <label htmlFor="res-time" required>Choose time:</label>
             <select id="res-time" name="res-time" onChange={e => dispatch({ type: 'setTime', payload: e.target.value })}>
                 {availableTimes.map(time => <option key={time}>{time}</option>)}
             </select>
