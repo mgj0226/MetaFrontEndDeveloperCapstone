@@ -27,6 +27,7 @@ function reducer(state, action) {
 const BookingForm = () => {
     const [state, dispatch] = useReducer(reducer, initialState);
     const [availableTimes, timesDispatch] = AvailableTimes();
+    const today = new Date().toISOString().split('T')[0];
 
     const handleDateChange = (e) => {
         dispatch({ type: 'setDate', payload: e.target.value });
@@ -40,7 +41,7 @@ const BookingForm = () => {
     return (
         <form onSubmit={handleSubmit} className='bookingForm'>
             <label htmlFor="res-date">Choose date:</label>
-            <input type="date" id="res-date" name="res-date" onChange={handleDateChange} required/>
+            <input type="date" id="res-date" name="res-date" onChange={handleDateChange} min={today} required/>
             <label htmlFor="res-time" required>Choose time:</label>
             <select id="res-time" name="res-time" onChange={e => dispatch({ type: 'setTime', payload: e.target.value })}>
                 {availableTimes.map(time => <option key={time}>{time}</option>)}
