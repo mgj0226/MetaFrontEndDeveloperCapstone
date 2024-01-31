@@ -1,4 +1,5 @@
 import React, { useReducer } from 'react';
+import { Link } from 'react-router-dom';
 import AvailableTimes from './AvailableTimes';
 
 const initialState = {
@@ -53,7 +54,7 @@ const BookingForm = () => {
                 <option>Business meal</option>
                 <option>Other</option>
             </select>
-            <input type="submit" value="Make Your reservation" className='submitBtn' />
+            <Link to="/Confirmed"><input type="submit" value="Make Your reservation" className='submitBtn'/></Link>
         </form>
     );
 };
