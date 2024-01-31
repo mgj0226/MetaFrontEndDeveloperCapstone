@@ -2,10 +2,10 @@ import confirmStar from '../../images/confirmStar.svg'
 
 export default function Confirmed() {
     return (
-        <>
+        <section className='confirmed'>
             <img src={confirmStar} alt="star" className='confirmStar' />
-            <h2>Confirmed!</h2>
-            <p>Thank you for your reservation!</p>
-        </>
+            <h2 className='confirmedTitle'>Confirmed!</h2>
+            <p className='confirmedText'>Thank you for your reservation!</p>
+        </section>
     )
 }

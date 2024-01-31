@@ -470,6 +470,53 @@ textarea, input {
   margin-bottom: 0em;
 }
 
+.construction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.constructionSign {
+  width: 20em;
+  margin: 0;
+}
+.constructionTitle {
+  font-family: "Markazi Text", sans-serif;
+  font-weight: 600;
+  font-size: 6rem;
+  margin: 0em;
+}
+.constructionText {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0em;
+  margin-bottom: 10em;
+}
+
+.confirmed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3em 0;
+}
+.confirmedStar {
+  margin: 0;
+}
+.confirmedTitle {
+  font-family: "Markazi Text", sans-serif;
+  font-weight: 600;
+  font-size: 6rem;
+  margin: 0em;
+}
+.confirmedText {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0em;
+  margin-bottom: 10em;
+}
+
 @media screen and (max-width: 768px) {
   .menuIcon {
     display: flex;
